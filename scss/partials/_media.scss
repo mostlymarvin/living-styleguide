@@ -1,7 +1,7 @@
 /*------------------------
    @Media Queries
 ------------------------*/
-@media screen and ( min-width: 800px ) {
+@media all and ( min-width: 800px ) {
   #colors li {
     clear:none;
     float:left;
@@ -47,7 +47,7 @@
     }
 }
 
-@media screen and ( min-width: 960px ) {
+@media all and ( min-width: 960px ) {
   .slicknav_menu {
     display:none;
   }
@@ -64,12 +64,12 @@
   }
 }
 
-@media screen and ( min-width: 1050px ) {
+@media all and ( min-width: 1050px ) {
   span.btn-wrap {
     display:inline;
   }
 }
-@media screen and ( min-width: 1200px ) {
+@media all and ( min-width: 1200px ) {
   #colors li {
     float:left;
     width:15%;

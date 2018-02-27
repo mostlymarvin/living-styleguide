@@ -454,7 +454,6 @@ blockquote:after {
 
 #colors li {
   border: 2px solid #E0E0E0;
-  clear: both;
   display: block;
   height: 300px;
   margin: 0.809rem auto;
@@ -717,7 +716,7 @@ input {
 /*------------------------
    @Media Queries
 ------------------------*/
-@media screen and (min-width: 800px) {
+@media all and (min-width: 800px) {
   #colors li {
     clear: none;
     float: left;
@@ -754,7 +753,7 @@ input {
     -o-transform: rotate(45deg);
     z-index: 99999; } }
 
-@media screen and (min-width: 960px) {
+@media all and (min-width: 960px) {
   .slicknav_menu {
     display: none; }
   #menu {
@@ -766,11 +765,11 @@ input {
   .logo-alt.logo-c {
     margin-right: 0; } }
 
-@media screen and (min-width: 1050px) {
+@media all and (min-width: 1050px) {
   span.btn-wrap {
     display: inline; } }
 
-@media screen and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
   #colors li {
     float: left;
     width: 15%;
