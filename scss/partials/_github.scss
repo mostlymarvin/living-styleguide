@@ -1,0 +1,56 @@
+/*------------------------
+   Github Ribbon
+   modified from: https://codepo8.github.io/css-fork-on-github-ribbon/
+------------------------*/
+
+.wrapper.nav {
+  top:41px;
+}
+#forkongithub {
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  height:41px;
+  width:100%;
+  z-index:99999;
+}
+#forkongithub a {
+  background: $primary;
+  color: $ltext;
+  display:block;
+  text-decoration:none;
+  @include btnfont();
+  text-align:center;
+  padding:5px 40px; 
+  font-size:14px; 
+  line-height:$baseline;
+  position:relative;
+  transition:0.5s;
+  width:100%;
+}
+
+#forkongithub a:hover {
+  background: $secondary;
+  color: $ltext;
+}
+
+#forkongithub a::before,
+#forkongithub a::after { 
+  content:"";
+  width:100%;
+  display:block;
+  position:absolute;
+  left:0;
+  height:2px;
+  background: $ltext;
+}
+#forkongithub a::before {
+  top:4px;
+}
+#forkongithub a::after {
+ bottom:2px;
+}
+
+
+

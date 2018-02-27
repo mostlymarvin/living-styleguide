@@ -1,0 +1,85 @@
+/*------------------------
+   @Media Queries
+------------------------*/
+@media screen and ( min-width: 800px ) {
+  #colors li {
+    clear:none;
+    float:left;
+    width:32%;
+    margin-right:2%;
+    }
+  #colors li:nth-of-type(3n) {
+    margin-right:0;
+  }
+  .logo-a img {
+    max-width:60%;
+  }
+  .logo-alt img {
+    max-width:80%;
+  }
+  .wrapper.nav {
+    top:0;
+  }
+  #forkongithub {
+    position:fixed;
+    display:block;
+    top:0px;
+    right:0;
+    left: unset;
+    width:300px;
+    overflow:hidden;
+    height:200px;
+    z-index:99999;
+  }
+  #forkongithub a {
+    width:300px;
+    position:absolute;
+    font-size:11px;
+    top:60px;
+    right:-60px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    //box-shadow:4px 4px 10px rgba(50,51,57,0.4);
+    z-index:99999;
+    }
+}
+
+@media screen and ( min-width: 960px ) {
+  .slicknav_menu {
+    display:none;
+  }
+  #menu {
+    display:block;
+  }
+  .logo-alt {
+    float: left;
+    width:49%;
+    margin-right:2%;
+  } 
+  .logo-alt.logo-c {
+    margin-right:0;
+  }
+}
+
+@media screen and ( min-width: 1050px ) {
+  span.btn-wrap {
+    display:inline;
+  }
+}
+@media screen and ( min-width: 1200px ) {
+  #colors li {
+    float:left;
+    width:15%;
+    margin-right:2%;
+    }
+  #colors li:nth-of-type(3n) {
+    margin-right:2%;
+  }
+  #colors li:last-of-type {
+    margin-right:0;
+  }
+
+}

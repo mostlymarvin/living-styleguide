@@ -1,0 +1,30 @@
+/*------------------------
+   Guide
+------------------------*/
+
+$ghighlight : #E0E0E0;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@mixin guidefont() {
+ //font-family: 'Open Sans', sans-serif;
+ font-family: 'Lato', sans-serif;
+ letter-spacing: .5em;
+ text-transform: uppercase;
+}
+.footer,
+#masthead span,
+h3.guide {
+  border-bottom: 1px solid $ghighlight;
+  border-top: 1px solid $ghighlight;
+  color: rgba( $dtext, .7 );
+  @include guidefont();
+  font-size:12px;
+  margin: $baseline 0;
+  padding: $baseline*.25 0;
+}
+
+.headings {
+  @include titlefont();
+}
+.body {
+  @include bodyfont();
+}

@@ -1,0 +1,287 @@
+/*------------------------
+ Global
+------------------------*/
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  text-rendering:geometricPrecision;
+  word-wrap: break-word;
+}
+
+//headers, quotes, etc.
+h1, h2, h3, h4, h5, h6, p.site-title {
+    @include titlefont();
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+button,
+input,
+optgroup,
+select,
+textarea,
+dl,
+iframe, img, embed, video, .video-player, object, figure {
+  margin: 0; 
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+main,
+{
+  display: block;
+}
+
+//lists
+ol, ul {
+  margin:0;
+  padding-left:$baseline;
+}
+ul { 
+  list-style-type: disc; 
+  list-style-position: outside; 
+}
+ol { 
+  list-style-type: decimal; 
+  list-style-position: outside; 
+}
+ul ul, ol ul { 
+  list-style-type: circle; 
+  list-style-position: outside; 
+}
+ol ol, ul ol { 
+  list-style-type: lower-latin; 
+  list-style-position: outside; 
+}
+li {
+  display:list-item;
+}
+
+//buttons & links
+a,
+button {
+  transition: .5s;
+}
+
+a {
+  background-color: transparent;
+  color:inherit;
+  cursor:pointer;
+  text-decoration: none;
+  &:hover, &:active{
+    outline:none;
+  }
+}
+a:active, a:focus {
+  outline:none;
+}
+button {
+  background: none;
+  border: 0;
+  color:inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  overflow: visible;
+  -webkit-font-smoothing: inherit;
+  &:focus {
+    querytheme: 0;
+  }
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0; /* 2 */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"],
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+//images, figures, etc.
+iframe, img, embed, video, .video-player, object, figure, select {
+  border: 0;
+  max-width: 100%;
+}
+select {
+  overflow:hidden;
+}
+img, figure {
+  height:auto;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+//other important defaults
+
+b,
+strong {
+  font-weight: bold;
+}
+
+strike, del {
+  text-decoration:line-through;
+}
+
+
+abbr[title], abbr[data-original-title], acronym {
+  border:none;
+  cursor: help;
+}
+
+dfn {
+  font-style: italic;
+}
+
+small {
+  font-size: .8em;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ins {
+  display:inline-block;
+  text-decoration:none;
+}
+
+ins:before {
+content:'[';
+}
+
+ins:after {
+content:']';
+}
+
+pre {
+  overflow-x:scroll;
+  -ms-word-wrap:normal;
+  word-wrap:normal;
+  }
+
+pre, kbd, code, var, tt, samp {
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-style:normal;
+  margin:$baseline 0;
+  }
+
+kbd, code, var, samp {
+  //background-color:$highlight;
+  }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0 4px 0 0;
+}
+
+/* Keep Deprecated tags from screwing things up*/
+big {font-size:1em;}

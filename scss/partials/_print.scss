@@ -1,0 +1,58 @@
+/*------------------------
+   @Media Print Queries
+--------------------------*/
+
+@media print {
+
+  .wrapper.masthead {
+    padding-top:0;
+  }
+  .wrapper.masthead section {
+    margin:0;
+  }
+  #masthead img {
+    max-width:260px;
+  }
+  .break-page-before {
+    page-break-before: always;
+  }
+  .break-page-after {
+    page-break-after: always;
+  }
+  
+  .logo-a img{
+    max-width:60%;
+  }
+  .logo-alt img {
+    max-width:60%;
+  }
+  #forkongithub,
+  #menu,
+  .wrapper.nav,
+  .slicknav_menu,
+  .asset-download,
+  #print-page-button {
+    display:none;
+  }
+
+  #colors li {
+    float:left;
+    width:32%;
+    margin-right:2%;
+    }
+
+  #colors li:nth-of-type(3n) {
+    margin-right:0;
+  }
+
+  
+  .logo-alt {
+    float: left;
+    width:49%;
+    margin-right:2%;
+  } 
+  .logo-alt.logo-c {
+    margin-right:0;
+  }
+
+}

@@ -1,0 +1,24 @@
+/*------------------------
+   General
+------------------------*/
+
+.wrapper.masthead {
+  padding-top:$baseline*4;
+  text-align:center;
+}
+#masthead span {
+  display:block;
+  border-bottom:none;
+  border-top:none;
+  margin: $baseline*.125 0;
+  padding:0;
+}
+#masthead img {
+  display:inline-block;
+  margin:0 auto;
+  width:400px;
+  max-width:100%;
+}
+#print-page-button {
+  text-align:center;
+}

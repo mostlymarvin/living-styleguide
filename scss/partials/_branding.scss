@@ -1,0 +1,26 @@
+/*------------------------
+  Branding
+------------------------*/
+
+.logo,
+.logo-alt {
+  border:1px solid $ghighlight;
+  display:block;
+  margin: $baseline*.5 auto;
+  text-align:center;
+} 
+.logo-alt {
+  height:0;
+  overflow:hidden;
+}
+.logo-a {
+  margin: $baseline*.5 0;
+}
+.logo-alt img{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.asset-download {
+  text-align:right;
+} 

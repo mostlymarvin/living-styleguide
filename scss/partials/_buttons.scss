@@ -1,0 +1,56 @@
+/*------------------------
+   Buttons
+------------------------*/
+span.btn-wrap {
+  display:block;
+}
+@mixin btn() {
+  display:inline-block;
+  clear:both;
+  line-height:$baseline*2;
+  padding: 0 $baseline;
+  text-align:center;
+  margin:$baseline*.25 $baseline*.5 $baseline*.25 0;
+  @include transition( all, .5s);
+}
+@mixin btn_med() {
+  line-height: $baseline*1.5;
+  padding: 0 $baseline*.50;
+  font-size: .8rem;
+}
+@mixin btn_small() {
+  line-height:$baseline;
+  padding: 0 $baseline*.25;
+  font-size:.618rem;
+}
+
+a.btn {
+  @include btn();
+  @include btnfont();
+  @include borders( $dtext );
+  @include default_base();
+}
+a.btn.medium {
+  @include btn_med();
+}
+a.btn.small {
+  @include btn_small();
+}
+a.btn.btn-primary {
+  @include borders( $primary );
+  @include primary_base();
+  &:hover {
+    border-color: darken( $primary, $darken );
+    background: darken( $primary, $darken );
+  }
+}
+
+a.btn.btn-secondary {
+  @include borders( $secondary );
+  @include secondary_base();
+  &:hover {
+    border-color: darken( $secondary, $darken );
+    background: darken( $secondary, $darken );
+  }
+}
+

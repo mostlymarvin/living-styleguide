@@ -1,0 +1,154 @@
+/*------------------------------
+   Palette
+--------------------------------*/
+
+#colors{}
+#colors ul {
+  padding-left:0;
+}
+#colors li {
+  border:2px solid $ghighlight;
+  height:300px;
+  margin: $baseline*.5 auto;
+  width:100%;
+}
+
+#colors li:last-of-type {
+  margin-right:0;
+}
+
+.color-box {
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+.color-box .detail {
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color: $ltext;
+  border-top:1px solid $highlight;
+}
+
+.primary .color-box {
+  background-color: $primary;
+}
+
+.secondary .color-box {
+  background-color: $secondary;
+}
+
+.action .color-box {
+  background-color: $action;
+}
+
+.highlight .color-box {
+  background-color: $highlight;
+}
+
+.ltext .color-box {
+  background-color: $ltext;
+}
+
+.dtext .color-box {
+  background-color: $dtext;
+}
+
+
+.color-box .detail .alt {
+  height:40px;
+  width:100%;
+}
+
+.color-box .detail .alt span {
+  display:block;
+  float:left;
+  width:50%;
+  margin:0;
+  height:80px;
+  position:relative;
+}
+.color-box .detail .alt span.hex,
+.color-box .detail .alt span.rgb {
+  color: $dtext;
+  display:block;
+  @include guidefont();
+  font-size:10px;
+  letter-spacing:.1em;
+  height:14px;
+  width:100%;
+}
+
+.color-box .detail .alt span.hex label,
+.color-box .detail .alt span.rgb label {
+  background-color: rgba( $ltext, .5 );
+  padding: 0 2px;
+}
+.color-box .detail .alt span.rgb label {
+  font-size:9px;
+  letter-spacing:0;
+}
+.color-box .detail .alt span.alt-a {}
+
+.color-box .detail .alt span.alt-b {}
+
+.color-box .detail .labels {
+  text-align:left;
+  @include guidefont();
+  padding-left:8px;
+}
+.color-box .detail .labels span.hex,
+.color-box .detail .labels span.rgb,
+.color-box .detail .labels span.cmyk {
+  font-size:12px;
+  display:block;
+  letter-spacing:.2em;
+}
+.color-box .detail .labels span.cmyk {
+  font-size:9px;
+}
+.primary .color-box .detail .alt span.alt-a {
+    background-color: darken( $primary, $darken );
+}
+.primary .color-box .detail .alt span.alt-b {
+    background-color: lighten( $primary, $lighten );
+}
+
+.secondary .color-box .detail .alt span.alt-a {
+    background-color: darken( $secondary, $darken );
+}
+.secondary .color-box .detail .alt span.alt-b {
+    background-color: lighten( $secondary, $lighten );
+}
+
+.action .color-box .detail .alt span.alt-a {
+    background-color: darken( $action, $darken );
+}
+.action .color-box .detail .alt span.alt-b {
+    background-color: lighten( $action, $lighten );
+}
+
+.highlight .color-box .detail .alt span.alt-a {
+    background-color: darken( $highlight, $darken );
+}
+.highlight .color-box .detail .alt span.alt-b {
+  background-color: lighten( $highlight, $lighten );
+}
+
+.ltext .color-box .detail .alt span.alt-a {
+    background-color: darken( $ltext, $darken );
+}
+.ltext .color-box .detail .alt span.alt-b {
+    background-color: lighten( $ltext, $lighten );
+}
+
+.dtext .color-box .detail .alt span.alt-a {
+    background-color: darken( $dtext, $darken );
+}
+.dtext .color-box .detail .alt span.alt-b {
+    background-color: lighten( $dtext, $lighten );
+}
+
+

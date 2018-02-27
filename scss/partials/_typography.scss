@@ -1,0 +1,43 @@
+/*------------------------
+   Typography
+------------------------*/
+
+html { font-size: $base_fs*1px; }
+
+body {
+  color: $dtext;
+  @include bodyfont();
+  line-height: $baseline;
+}
+h1, h2, h3, h4, h5, h6 { 
+  line-height: 100%; 
+  position:relative; 
+  margin: 1em 0;
+}
+
+h1 { font-size: pow(1+$base, 3) *.89rem; }
+h2 { font-size: pow(1+$base, 2) *.89rem; }
+h3 { font-size: 1+$base * .89rem; }
+h4 { font-size:.89rem; }
+h5 { font-size:.809rem; }
+h6 { font-size:.788rem; }
+
+
+p {
+  margin: 0 0 $baseline;
+}
+
+blockquote {
+  margin: $baseline*2 auto;
+  width: $qwidth;
+  quotes: $quotes;
+}
+blockquote:before {
+  content: open-quote;
+}
+blockquote:after {
+  content: close-quote;
+}
+
+
+

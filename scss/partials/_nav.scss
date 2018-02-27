@@ -1,0 +1,44 @@
+/*------------------------
+  Navigation
+------------------------*/
+
+//global
+.wrapper.nav {
+  @include reverse_base();
+  @include navfont();
+  position:fixed;
+  z-index:99;
+  left:0;
+}
+.wrapper > nav {
+  max-width:1200px;
+  margin:0;
+}
+//mobile
+.slicknav_menu {
+
+}
+.slicknav_menu ul  {
+  padding-left: 0;
+}
+.slicknav_menu li {
+  list-style: none;
+  background: rgba( darken($primary, 15%), .4);
+  padding: $baseline*.25 $baseline;
+}
+.slicknav_menu li:nth-of-type(2n) {
+  background: rgba( darken($primary, 15%), .2);
+}
+//desktop
+#menu {
+  display:none;
+  padding-left:0;
+}
+
+#menu li {
+  list-style:none;
+  display:inline-block;
+  margin-right:$baseline;
+}
+
+
